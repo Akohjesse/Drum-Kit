@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+    <title>Drum Kit</title>
+</head>
+<body>
+    <h1 id="title">Drum 🥁 Kit</h1>
+   
+     <div class="drumSet">
+         <button class="w drum">w</button>
+         <button class="a drum">a</button>
+         <button class="s drum">s</button>
+         <button class="d drum">d</button>
+         <br>
+         <button class="j drum">j</button>
+         <button class="k drum">k</button>
+         <button class="l drum">l</button>
+     </div>
+
+     <script src="app.js"></script>
+</body>
+
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    text-align: center;
+    background-color: #283149;
+    font-family: 'Arvo', serif;
+}
+h1{
+    text-align: center;
+    font-size:5em;
+    margin:30px;
+    color:white;
+    padding:20px;
+}
+.drumSet{
+    margin:0 auto;
+    text-align:center;
+    padding-top:60px;
+    
+}
+.drumSet button{
+    width:15%;
+    border-radius:9px;
+    border:9px solid rgb(79, 59, 79);
+    margin:10px;
+    font-size: 3em;
+    color:rgb(0, 0, 0);
+    height:150px;
+}
+.w{
+    background-image:url(images/crash.png);
+    background-size:cover;
+}
+.a{
+    background-image: url(images/kick.png);
+    background-size:cover;
+}
+.s{
+    background-image:url(images/snare.png);
+    background-size:cover;
+}
+.d{
+    background-image: url(images/tom1.png);
+    background-size:cover;
+}
+.j{
+    background-image: url(images/tom2.png);
+    background-size:cover;
+}
+.k{
+    background-image: url(images/tom3.png);
+    background-size:cover;
+}
+.l{
+    background-image: url(images/tom4.png);
+    background-size:cover;
+}  
+
+@media (max-width: 590px){
+    h1{
+    text-align: center;
+    font-size:4em;
+    margin:30px;
+    color:white;
+    padding:20px;
+}  
+.drumSet button{
+    width:25%;
+    border-radius:9px;
+    border:9px solid rgb(79, 59, 79);
+    margin:10px;
+    font-size: 3em;
+    color:rgb(0, 0, 0);
+    height:100px;
+}
+}
+
+@media (max-width:498px){
+    h1{
+    text-align: center;
+    font-size:3.5em;
+    margin:20px;
+    color:white;
+    padding:20px;
+    }
+    .drumSet button{
+    width:30%;
+    border-radius:9px;
+    border:9px solid rgb(79, 59, 79);
+    margin:10px;
+    font-size: 3em;
+    color:rgb(0, 0, 0);
+    height:100px;
+}
+@media (max-width:423px){
+    h1{
+    text-align: center;
+    font-size:2em;
+    margin:10px;
+    color:white;
+    padding:10px;
+    }
+    .drumSet button{
+    width:25%;
+    border-radius:9px;
+    border:9px solid rgb(79, 59, 79);
+    margin:5px;
+    font-size: 1em;
+    color:rgb(204, 36, 36);
+    height:100px;
+}
+}
+}
+</style>
+
+<!-- <footer>
+  <p>Made with in Kogi</p>
+</footer> -->
+</html>
